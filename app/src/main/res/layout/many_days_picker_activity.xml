@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.app.custcalendar.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:abbreviationsBarColor="@android:color/transparent"
+        app:abbreviationsLabelsColor="@android:color/black"
+        app:anotherMonthsDaysLabelsColor="#aaa"
+        app:daysLabelsColor="#fff"
+        app:eventsEnabled="false"
+        app:headerColor="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pagesColor="#fff"
+        app:selectionColor="@color/design_default_color_primary_dark"
+        app:selectionLabelColor="#fff"
+        app:disabledDaysLabelsColor="#fff"
+        app:bookedDaysLabelsColor="#fff"
+        app:todayLabelColor="#DD2C00"
+        app:type="many_days_picker" />
+
+    <Button
+        android:id="@+id/getDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendarView" />
+
+</android.support.constraint.ConstraintLayout>
